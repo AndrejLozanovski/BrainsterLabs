@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hire Student</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Latest Font-Awesome CDN -->
+    <script src="https://kit.fontawesome.com/200ad43f52.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="shadow">
+      <a class="logo" href="./index.html"
+        ><img src="../Design/Logo.png" alt="Brainster Logo" style="width: 50px"
+      /></a>
+      <div class="navbar-toggle" id="navToggle">
+        <img
+          class="navIcon"
+          src="../Design/hamburger-menu.png"
+          style="width: 80px"
+          alt="hamburger menu icon"
+        />
+      </div>
+
+      <div class="menu-wrapper">
+        <ul class="menu">
+          <div class="navbar-toggle">
+            <img
+              class="navIcon closeIcon hidden"
+              src="../Design/close.svg"
+              style="width: 60px"
+              alt="X mark close icon"
+            />
+          </div>
+
+          <li class="nav-item mx-3 mb-2 mb-lg-0 pt-4 pt-lg-0">
+            <a
+              class="nav-link"
+              href="https://marketpreneurs.brainster.co
+              "
+              target="_blank"
+              >Академија за маркетинг
+            </a>
+          </li>
+          <li class="nav-item mx-3 mb-2 mb-lg-0">
+            <a class="nav-link" href="https://codepreneurs.brainster.co" target="_blank"
+              >Академија за програмирање</a
+            >
+          </li>
+
+          <li class="nav-item mx-3 mb-2 mb-lg-0">
+            <a class="nav-link" href="https://brainster.co/data-science/" target="_blank"
+              >Академија за data science</a
+            >
+          </li>
+
+          <li class="nav-item mx-3 mb-3 mb-lg-0">
+            <a class="nav-link" href="https://design.brainster.co" target="_blank"
+              >Академија за дизајн</a
+            >
+          </li>
+        </ul>
+        <a
+          class="btn-form font-weight-bold mr-3 my-1 text-decoration-none"
+          href="./hire_student.html"
+        >
+          Вработи наш студент
+        </a>
+      </div>
+    </nav>
+    <!-- BANNER -->
+    <div class="content bg-yellow">
+      <div class="text-center ptb-100 align-items-center">
+        <h1 class="display-3 font-weight-bold">Вработи студенти</h1>
+      </div>
+
+      <!-- FORM SECTION -->
+      <div class="container vh-80 ptb-100">
+        <form name="form" id="form">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="fullname" class="font-weight-bold">Име и презиме</label>
+              <div class="input-control">
+                <input
+                  type="text"
+                  class="form-control p-4"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Вашето име и презиме"
+                />
+                <small></small>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <label for="company" class="font-weight-bold">Име на компанија</label>
+              <div class="input-control">
+                <input
+                  type="text"
+                  class="form-control p-4"
+                  id="company"
+                  placeholder="Име на вашата компанија"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+                <small></small>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <label for="email" class="font-weight-bold">Контакт имејл</label>
+              <div class="input-control">
+                <input
+                  type="text"
+                  class="form-control p-4"
+                  id="email"
+                  placeholder="Контакт имејл на вашата компанија"
+                />
+                <small></small>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <label for="" class="font-weight-bold">Контакт телефон</label>
+              <div class="input-control">
+                <input
+                  type="tel"
+                  class="form-control p-4"
+                  id="contact"
+                  placeholder="Контакт телефон на вашата компанија"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <small></small>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <label for="students" class="font-weight-bold">Тип на студенти</label>
+              <div class="input-control">
+                <button class="button p-4" id="students">
+                  <span class="font-weight-bold select" id="select-label" name="student"
+                    >Изберете тип на студент</span
+                  >
+                  <div class="arrow"></div>
+                </button>
+
+                <div class="dropdown hidden" id="dropdown">
+                  <label for="marketing" class="select-item">Студенти од маркетинг</label>
+                  <input type="radio" class="option" id="marketing" value="marketing student" />
+
+                  <label for="programming" class="select-item">Студенти од програмирање</label>
+                  <input type="radio" class="option" id="programming" value="programmin student" />
+
+                  <label for="data-science" class="select-item">Студенти од data science</label>
+                  <input
+                    type="radio"
+                    class="option"
+                    id="data-science"
+                    value="data-science student"
+                  />
+
+                  <label for="design" class="select-item">Студенти од дизајн</label>
+                  <input type="radio" class="option" id="design" value="design student" />
+                </div>
+                <small></small>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <button
+                class="btn btn-block bg-red text-white font-weight-bold"
+                type="submit"
+                style="height: 50px; margin-top: 31px"
+              >
+                Испрати
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white p-2">
+      <p class="m-0 py-1 font-weight-bold">Изработено со &#10084; од студентите на Brainster</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./formValidation.js"></script>
+    <script src="./hamburgerMenu.js"></script>
+
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
