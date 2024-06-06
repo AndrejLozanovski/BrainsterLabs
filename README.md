@@ -1,4 +1,4 @@
-# Academy-Students-Projects-Hire-A-Student
+# BrainsterLabs
 
 This is my first ever mini project made. 
 Place where you can preview projects made by the students in a academy, and potentionally to hire a student to work for your company if you are satisfied with their work.
